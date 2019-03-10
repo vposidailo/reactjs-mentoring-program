@@ -1,7 +1,7 @@
-import React, { memo } from 'react'
+import React from 'react'
 
-function movieTileItem(prop) {
-    return <div><h4>{ prop.Title }</h4><p>{prop.Author}</p><p>{prop.Duration}</p></div>
+export default class MovieTileItem extends React.PureComponent {
+    render(){
+        return <div>This is pure component</div>
+    }
 }
-
-export default memo(movieTileItem);

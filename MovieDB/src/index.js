@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Search } from './components/search-component';
+import MovieTileItem from './components/movie-tile-item';
 
 // create element examples
 const header = React.createElement('div', null, React.createElement('h1', null, 'This is a header'));
@@ -18,6 +19,4 @@ const firtMoview = {
     Duration: "1h 59 mins"
 };
 
-    
-
-ReactDOM.render([header, middle, <Search />, listOfMovie(firtMoview), footer], document.getElementById('root'));
+ReactDOM.render([header, middle, <Search />, listOfMovie(firtMoview), <MovieTileItem />, footer], document.getElementById('root'));
