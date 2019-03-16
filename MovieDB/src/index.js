@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Search } from './components/search-component';
+import  Search from './components/search';
 import MovieTileItem from './components/movie-tile-item';
 
 // create element examples

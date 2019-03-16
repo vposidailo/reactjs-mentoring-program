@@ -1,8 +1,6 @@
-import React from 'react'
+import React from 'react' 
 
-export { Search } 
-
-class Search extends React.Component{
+export default class Search extends React.Component{
     render(){
         return <div>
                 <p>FIND YOUR MOVIE</p>
@@ -11,5 +9,3 @@ class Search extends React.Component{
             </div>;
     }
 }
-
-export default Search;
