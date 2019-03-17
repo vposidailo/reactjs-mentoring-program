@@ -10,7 +10,7 @@ const middle = React.createElement('div', null, 'here should be search bar');
 const footer = React.createElement('div', null, 'Footer');
 
 // create function component examples
-const movies = movie => <div><h4>{ movie.title }</h4><p>{movie.author}</p><p>{movie.duration}</p></div>;
+const movies = movie => '<div><h4>{ movie.title }</h4><p>{movie.author}</p><p>{movie.duration}</p></div>';
 
 const movie = {
   title: 'Kill Bill',
