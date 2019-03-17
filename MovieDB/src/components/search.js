@@ -1,11 +1,15 @@
-import React from 'react' 
+import React from 'react';
 
-export default class Search extends React.Component{
-    render(){
-        return <div>
-                <p>FIND YOUR MOVIE</p>
-                <input type="text" />
-                <button>Search</button>
-            </div>;
-    }
+// eslint-disable-next-line react/prefer-stateless-function
+export default class Search extends React.Component {
+  render() {
+    return (
+      // eslint-disable-next-line react/jsx-filename-extension
+      <div>
+        <p>FIND YOUR MOVIE</p>
+        <input type="text" />
+        <button type="button">Search</button>
+      </div>
+    );
+  }
 }

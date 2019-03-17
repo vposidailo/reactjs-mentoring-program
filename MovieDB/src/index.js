@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Search from './components/search';
@@ -9,14 +10,12 @@ const middle = React.createElement('div', null, 'here should be search bar');
 const footer = React.createElement('div', null, 'Footer');
 
 // create function component examples
-const listOfMovie = (movie) => {
-    return <div><h4>{ movie.title }</h4><p>{movie.author}</p><p>{movie.duration}</p></div>
-}
+const movies = movie => <div><h4>{ movie.title }</h4><p>{movie.author}</p><p>{movie.duration}</p></div>;
 
-const firtMoview = {
-    title: "Kill Bill",
-    author: "Quentin Tarantino",
-    duration: "1h 59 mins"
+const movie = {
+  title: 'Kill Bill',
+  author: 'Quentin Tarantino',
+  duration: '1h 59 mins',
 };
 
-ReactDOM.render([header, middle, <Search />, listOfMovie(firtMoview), <MovieTileItem />, footer], document.getElementById('root'));
+ReactDOM.render([header, middle, <Search />, movies(movie), <MovieTileItem />, footer], document.getElementById('root'));
