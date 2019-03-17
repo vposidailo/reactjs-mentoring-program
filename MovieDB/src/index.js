@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  Search from './components/search';
+import Search from './components/search';
 import MovieTileItem from './components/movie-tile-item';
 
 // create element examples
@@ -10,13 +10,13 @@ const footer = React.createElement('div', null, 'Footer');
 
 // create function component examples
 const listOfMovie = (movie) => {
-    return <div><h4>{ movie.Title }</h4><p>{movie.Author}</p><p>{movie.Duration}</p></div>
+    return <div><h4>{ movie.title }</h4><p>{movie.author}</p><p>{movie.duration}</p></div>
 }
 
 const firtMoview = {
-    Title: "Kill Bill",
-    Author: "Quentin Tarantino",
-    Duration: "1h 59 mins"
+    title: "Kill Bill",
+    author: "Quentin Tarantino",
+    duration: "1h 59 mins"
 };
 
 ReactDOM.render([header, middle, <Search />, listOfMovie(firtMoview), <MovieTileItem />, footer], document.getElementById('root'));
