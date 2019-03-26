@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build:dev": "webpack --env dev",
-   "build:prod": "webpack --env prod",
+    "build:prod": "webpack --env prod",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
@@ -18,19 +18,13 @@
   },
   "author": "Vitalii Posidailo",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",
-    "react-router-redux": "^4.0.8",
+    "react-router": "^5.0.0",
     "react-scripts": "^2.1.8",
     "redux": "^4.0.1"
   },
