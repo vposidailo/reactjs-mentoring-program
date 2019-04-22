@@ -1,0 +1,14 @@
+.movie-gallary-container{
+    background: #F9FBFC;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.movie-no-items-found {
+    align-items: center;
+    background: #F9FBFC;
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    height: 400px;
+}

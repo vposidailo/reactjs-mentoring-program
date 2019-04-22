@@ -1,21 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Search from './components/search';
-import MovieTileItem from './components/movie-tile-item';
+import App from "./app/app";
+import ErrorBoundary from './error-boundaries/error-boundaries';
 
-// create element examples
-const header = React.createElement('div', {key: "headerKey"}, React.createElement('h1', null, 'This is a header'));
-const middle = React.createElement('div', {key: "middleKey"}, 'here should be search bar');
-const footer = React.createElement('div', {key: "footerKey"}, 'Footer');
-
-// create function component examples
-const movies = movie => <div key="movieFunctionKey"><h4>{ movie.title }</h4><p>{movie.author}</p><p>{movie.duration}</p></div>;
-
-const movie = {
-  title: 'Kill Bill',
-  author: 'Quentin Tarantino',
-  duration: '1h 59 mins',
-};
-
-ReactDOM.render([header, middle, <Search key="searchKey"/>, movies(movie), <MovieTileItem key="movieTileItemKey"/>, footer], document.getElementById('root'));
+ReactDOM.render(<ErrorBoundary><App key="movie-app" /></ErrorBoundary>,  document.getElementById('root'));

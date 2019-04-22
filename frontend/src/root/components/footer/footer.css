@@ -1,0 +1,9 @@
+.footer-layout {
+    align-items: center;
+    background-color: #33302D;
+    color: #E50914;
+    display: flex;
+    height: 35px;
+    padding: 0px 40px 0px 40px;
+    width: 100%;
+}

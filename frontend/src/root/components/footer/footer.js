@@ -1,14 +1,14 @@
 import React from 'react';
 
+import './footer.css';
+
 // eslint-disable-next-line react/prefer-stateless-function
-export default class Search extends React.Component {
+export default class Footer extends React.PureComponent {
   render() {
     return (
       // eslint-disable-next-line react/jsx-filename-extension
-      <div>
-        <p>FIND YOUR MOVIE</p>
-        <input type="text" />
-        <button type="button">Search</button>
+      <div className="footer-layout">
+        <span>netflixroulette</span>
       </div>
     );
   }
