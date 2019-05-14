@@ -6,6 +6,8 @@ import Search from '../search/search';
 import MovieTileGallary from '../movie-gallary/movie-gallary-root/movie-gallary-root';
 import MovieInfoDescription from '../movie-gallary/movie-gallary-info/movie-gallary-info';
 
+import { fetchMoviesPending, fetchMoviesSuccess, fetchMoviesError } from '../reducers/movie-reducer';
+
 import './app.css';
 
 const API = 'https://reactjs-cdp.herokuapp.com/movies';
@@ -20,6 +22,22 @@ export default class App extends React.Component {
 
     this.applyNewSearch = this.applyNewSearch.bind(this);
   }
+
+  // fetchMovies() {
+  //   return dispatch => {
+  //     dispatch(fetchMoviesPending());
+  //     fetch(API)
+  //     .then(response => response.json())
+  //     .then(response => {
+  //       if(response.error) {
+  //         throw(response.error);
+  //       }
+
+  //       dispatch(fetchMoviesSuccess(response.movies));
+  //       return response.movies;
+  //     })  
+  //   }
+  // }
 
   applyNewSearch(search_value, search_by_value, sortBy) {
     this.setState({search: search_value, searchBy: search_by_value});

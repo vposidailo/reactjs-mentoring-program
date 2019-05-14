@@ -4,4 +4,10 @@ import ReactDOM from 'react-dom';
 import App from "./app/app";
 import ErrorBoundary from './error-boundaries/error-boundaries';
 
-ReactDOM.render(<ErrorBoundary><App key="movie-app" /></ErrorBoundary>,  document.getElementById('root'));
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import { moviesReducer } from './reducers/movie-reducer'
+
+const store = createStore(moviesReducer);
+
+ReactDOM.render(<ErrorBoundary><Provider store={store}><App key="movie-app" /></Provider></ErrorBoundary>,  document.getElementById('root'));
